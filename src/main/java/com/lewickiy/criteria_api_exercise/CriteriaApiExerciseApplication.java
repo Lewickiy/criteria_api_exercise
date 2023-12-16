@@ -9,5 +9,4 @@ public class CriteriaApiExerciseApplication {
     public static void main(String[] args) {
         SpringApplication.run(CriteriaApiExerciseApplication.class, args);
     }
-
 }

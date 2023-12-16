@@ -22,8 +22,6 @@ import java.util.Set;
 @Entity
 @Table(name = "#{class.simpleName}")
 public class Actor {
-    public static final String NAME = Actor.class.getSimpleName().toLowerCase();
-    private static final String COLLECTION_TABLE_NAME = new String(NAME + "_" + Profession.NAME);
     @Id
     private Integer id;
 
@@ -34,6 +32,6 @@ public class Actor {
     private String lastName;
 
     @ElementCollection
-    @CollectionTable(name = "COLLECTION_TABLE_NAME")
+    @CollectionTable(name = "actor_professions")
     private Set<Profession> profession;
 }
