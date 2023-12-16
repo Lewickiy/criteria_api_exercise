@@ -1,4 +1,4 @@
-package com.lewickiy.criteria_api_exercise.domain;
+package com.lewickiy.criteria_api_exercise.entity;
 
 public enum Profession {
     ACTOR ("actor"),

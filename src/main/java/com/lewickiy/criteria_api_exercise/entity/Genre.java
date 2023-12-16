@@ -1,4 +1,4 @@
-package com.lewickiy.criteria_api_exercise.domain;
+package com.lewickiy.criteria_api_exercise.entity;
 
 public enum Genre {
     ACTION ("action"),
@@ -11,13 +11,12 @@ public enum Genre {
     ANIMATION ("animation");
 
     private final String title;
-    public static final String NAME = Profession.class.getSimpleName().toLowerCase();
 
     Genre(String title) {
         this.title = title;
     }
 
-    public String getTitle() {
+    String getTitle() {
         return title;
     }
 }
