@@ -39,7 +39,7 @@ public class Actor {
             allocationSize = 1
     )
     @Column(name = "actor_id")
-    private Integer id;
+    private Long id;
 
     @Column(name = "firstname")
     private String firstName;
